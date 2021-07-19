@@ -9,7 +9,7 @@ const MainPageLayout = ({ children }) => {
             title="Box Office"
             subtitle="Are you looking for a movie or an actor?"
          />
-         <h1>{children}</h1>
+         {children}
       </React.Fragment>
    );
 };
