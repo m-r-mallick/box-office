@@ -8,6 +8,7 @@
         "plugin:react/recommended",
         "prettier"
     ],
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -19,5 +20,6 @@
         "react", "react-hooks"
     ],
     "rules": {
+        "react/prop-types": "off"
     }
 }
