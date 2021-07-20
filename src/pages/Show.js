@@ -60,10 +60,10 @@ const Show = () => {
    }, [id]);
 
    if (isLoading) {
-      return <div>Loading...</div>;
+      return <h2>Loading...</h2>;
    }
    if (error) {
-      return <div>{error}</div>;
+      return <h2>{error}</h2>;
    }
 
    return (
