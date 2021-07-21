@@ -4,7 +4,7 @@ import { LinkStyled, NavList } from './Navs.styled';
 
 const LINKS = [
    { to: '/', text: 'Home' },
-   { to: '/starred', text: 'starred' },
+   { to: '/starred', text: 'Starred' },
 ];
 
 const Navs = () => {
