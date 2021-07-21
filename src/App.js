@@ -3,10 +3,19 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Show from './pages/Show';
 import Starred from './pages/Starred';
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+   mainColors: {
+      blue: '#2400ff',
+      gray: '#c6c6c6',
+      dark: '#353535',
+   },
+};
 
 const App = () => {
    return (
-      <React.Fragment>
+      <ThemeProvider theme={theme}>
          <Switch>
             <Route exact path="/">
                <Home />
@@ -19,7 +28,7 @@ const App = () => {
             </Route>
             <Route path="/*">ERROR</Route>
          </Switch>
-      </React.Fragment>
+      </ThemeProvider>
    );
 };
 
